@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXARI Restaurant</title>
+    <link rel="stylesheet" href="restaurant.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reservation">Reservations</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+<section id="home" class="hero">
+    <h1 class="welcome-text">Welcome to LUXARI Restaurant</h1>
+    <p><h2><marquee>Experience the finest dining experience with us.</marquee></h2></p>
+</section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <h2>Our Menu</h2>
+      <div class="menu-box">
+        <div class="menu-item">
+            <h1>Indian style briyani's</h1>
+            <p><h3>A classic briyani with traditional Indian flavours.</h3></p>
+            <p><h3>starting Price: Rs:280</h3></p>
+        </div>
+        <div class="menu-item">
+            <h1>infused chicken's</h1>
+            <p><h3>chicken with delicious infuse.</h3></p>
+            <p><h3>Price: RS:450</h3></p>
+        </div>
+        <div class="menu-item">
+            <h1>Indian state unique dishes</h1>
+            <p><h3>Indian state popular dishes are available.</h3></p>
+            
+        </div>
+      </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="reservation">
+        <h2>Make a Reservation</h2>
+        <form id="reservation-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="time">Time:</label>
+            <input type="time" id="time" required>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" min="1" required>
+
+            <button type="submit">Reserve Now</button>
+        </form>
+        <p id="reservation-message"></p>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <h2>Upcoming Events</h2>
+        <div class="event-item">
+            <h3>Wine Tasting Night</h3>
+            <p>Join us for an exclusive wine tasting event with experts from around the world.</p>
+            <p>Date: October 25, 2024 | Time: 7:00 PM</p>
+        </div>
+        <div class="event-item">
+            <h3>Live Jazz Dinner</h3>
+            <p>Enjoy a night of live jazz music while dining on our chef’s special menu.</p>
+            <p>Date: November 5, 2024 | Time: 8:00 PM</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <p>Contact us at <strong>123-456-7890</strong> or visit us at <strong>123 theppakulam,Madurai.</strong></p>
+        <p>&copy; 2024 LUXARI Restaurant</p>
+    </footer>
+
+    <script src="restaurant.js"></script>
+    <script>
+        window.addEventListener('load', () => {
+            const welcomeText = document.querySelector('.welcome-text');
+            welcomeText.classList.add('show');
+        });
+    </script>
+    
+</body>
+</html>
